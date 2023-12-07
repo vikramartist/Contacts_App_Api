@@ -9,7 +9,7 @@ const connectDb = async () => {
       connect.connection.name
     );
   } catch (error) {
-    console.log(err.message);
+    console.log(error.message);
     process.exit(1);
   }
 };
